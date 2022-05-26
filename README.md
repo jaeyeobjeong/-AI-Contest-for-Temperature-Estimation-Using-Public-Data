@@ -7,7 +7,7 @@
 ---
 ## 프로젝트 설명
 
-### 요약 : 시계열 변수르 고려한 Feature Engineering과 LGBM & Ensemble을 적용항 모델 개발
+### 요약 : 시계열 변수를 고려한 Feature Engineering과 LGBM & Ensemble을 적용항 모델 개발
 
 ### Feature Engineering
 
