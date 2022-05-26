@@ -1,7 +1,9 @@
 ## [Dacon] AI프렌즈 시즌1 온도 추정 경진대회
 
-## 기간 : 
-## 결과 : 
+기간 : 2020.03.01. ~ 2020.04.13.
+결과 : 
+  - public : 1.47521 (대회 4등)
+  - private : 3.51084 (대회 2등)
 ---
 ## 프로젝트 설명
 
@@ -9,9 +11,13 @@
 
 ### Feature Engineering
 
-<img width="895" alt="스크린샷 2022-05-26 오후 12 42 40" src="https://user-images.githubusercontent.com/47520920/170412030-a9d0a828-0e71-4e0b-bf2a-a41ea391cdd5.png">
-
+데이터의 모드 변수가 시계열 변수(기온, 현지기압, 풍속, 강수량, 해면기압, 일사량, 습도, 풍향)였음.
+=> 해당 변수에 이동평균을 적용하여 Feature를 만듦.
 
 ### Modeling
 
 ![IMG_0011](https://user-images.githubusercontent.com/47520920/170411988-0f58dc70-febd-46a2-b6e9-30168a233041.JPG)
+
+Feature Engineering으로 만든 Feature를 활용하여 5개의 Featureset을 만듦.
+
+'Featureset 1 ~ 3(Power Mean Ensemble) + Featureset 4 + Featureset 5' 형태의 Ensemble을 통해 최종 모델 개발
